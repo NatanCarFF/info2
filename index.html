@@ -6,47 +6,80 @@
     <title>Currículo - Eddy Wendell Santos de Souza</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             line-height: 1.6;
-            margin: 20px;
-            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+            background-color: #e9eef2;
             color: #333;
         }
         .container {
-            max-width: 800px;
+            max-width: 850px;
             margin: auto;
-            background: #fff;
+            background: #ffffff;
             padding: 30px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
-        h1, h2 {
+        .header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #0056b3;
+            margin-bottom: 20px;
+        }
+        .header h1 {
+            font-size: 2.5em;
+            color: #0056b3;
+            margin: 0;
+        }
+        .header p {
+            margin: 5px 0 0;
+            font-size: 1em;
+            color: #555;
+        }
+        .section {
+            margin-bottom: 25px;
+        }
+        .section h2 {
+            font-size: 1.5em;
             color: #0056b3;
             border-bottom: 2px solid #0056b3;
             padding-bottom: 5px;
-        }
-        .contact-info {
-            text-align: center;
-            margin-bottom: 20px;
-        }
-        .contact-info h1 {
-            border-bottom: none;
-            margin-bottom: 5px;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .experience-item {
             margin-bottom: 15px;
         }
-        .job-title {
-            font-weight: bold;
+        .experience-item {
+            margin-bottom: 20px;
+            padding-left: 15px;
+            border-left: 3px solid #0056b3;
         }
-        .company {
+        .job-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+        .job-info h3 {
+            margin: 0;
+            font-size: 1.2em;
+        }
+        .job-info .period {
             font-style: italic;
+            color: #777;
         }
         ul {
             list-style-type: disc;
             padding-left: 20px;
+            margin-top: 5px;
+        }
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .skills-list li {
+            background: #f0f0f0;
+            padding: 8px 12px;
+            border-radius: 5px;
         }
     </style>
 </head>
@@ -54,57 +87,101 @@
 
 <div class="container">
 
-    <div class="contact-info">
+    <div class="header">
         <h1>EDDY WENDELL SANTOS DE SOUZA</h1>
         <p>Tv. Nossa Sra. de Nazaré, Nº 03, Bairro: São João de Outeiro, Belém - PA</p>
-        <p>Contato: (91) 98514-4836 | Solteiro</p>
+        <p>(91) 98514-4836 | Solteiro</p>
+    </div>
+
+    <div class="section">
+        <h2>RESUMO PROFISSIONAL</h2>
+        <p>Profissional com sólida experiência em vendas e atendimento ao cliente, buscando aplicar habilidades de negociação e conhecimento de produto para atingir metas e contribuir para o crescimento da empresa. Com histórico comprovado em diversas indústrias, incluindo varejo e serviços.</p>
     </div>
 
     <div class="section">
         <h2>OBJETIVO</h2>
-        <p>Desenvolver habilidades com responsabilidade, com foco principal em desempenhar as funções atribuídas com presteza e ética. Aplicar os conhecimentos adquiridos para alcançar um bom desenvolvimento profissional.</p>
-    </div>
-
-    <div class="section">
-        <h2>ESCOLARIDADE</h2>
-        <p>Ensino Médio Completo - Belém - PA</p>
-    </div>
-
-    <div class="section">
-        <h2>CURSOS REALIZADOS</h2>
-        <ul>
-            <li>Creative Informática: Informática Básica</li>
-        </ul>
+        <p>Atuar como Vendedor, aplicando minha experiência e habilidades em negociação e atendimento para maximizar resultados e garantir a satisfação do cliente.</p>
     </div>
 
     <div class="section">
         <h2>EXPERIÊNCIAS PROFISSIONAIS</h2>
 
         <div class="experience-item">
-            <p><span class="job-title">Vendedor</span> - <span class="company">Casas Bahia</span></p>
-            <p>Período: 21/08/2023 - 14/08/2024</p>
+            <div class="job-info">
+                <h3>Vendedor | Casas Bahia</h3>
+                <span class="period">21/08/2023 - 14/08/2024</span>
+            </div>
+            <ul>
+                <li>Responsável por fechar vendas de produtos e serviços, garantindo o alcance de metas diárias e mensais.</li>
+                <li>Atuava no atendimento direto ao cliente, auxiliando na escolha de produtos e na resolução de dúvidas.</li>
+                <li>Colaborou para a organização e manutenção do setor de vendas.</li>
+            </ul>
         </div>
 
         <div class="experience-item">
-            <p><span class="job-title">Vendedor</span> - <span class="company">Havan S.A</span></p>
-            <p>Período: 07/10/2022 - 03/07/2023</p>
+            <div class="job-info">
+                <h3>Vendedor | Havan S.A.</h3>
+                <span class="period">07/10/2022 - 03/07/2023</span>
+            </div>
+            <ul>
+                <li>Realizou a abordagem e demonstração de produtos aos clientes, identificando suas necessidades para oferecer a melhor solução.</li>
+                <li>Contribuía para a fidelização dos clientes, prestando um atendimento de alta qualidade.</li>
+                <li>Gerenciava o estoque e a exposição dos produtos na área de vendas.</li>
+            </ul>
         </div>
 
         <div class="experience-item">
-            <p><span class="job-title">Promotor de Vendas</span> - <span class="company">Spar Brasil Serviços LTDA</span></p>
-            <p>Período: 18/06/2021 - 14/07/2022</p>
+            <div class="job-info">
+                <h3>Promotor de Vendas | Spar Brasil Serviços LTDA</h3>
+                <span class="period">18/06/2021 - 14/07/2022</span>
+            </div>
+            <ul>
+                <li>Promoveu a divulgação de produtos e serviços, aumentando o interesse e a demanda do público.</li>
+                <li>Coletava feedback de clientes e relatava ao time de marketing.</li>
+            </ul>
         </div>
 
         <div class="experience-item">
-            <p><span class="job-title">Vendedor</span> - <span class="company">Polimport Comércio EXP.LTDA</span></p>
-            <p>Período: 01/04/2018 - 13/08/2020</p>
+            <div class="job-info">
+                <h3>Vendedor | Polimport Comércio EXP.LTDA</h3>
+                <span class="period">01/04/2018 - 13/08/2020</span>
+            </div>
+            <ul>
+                <li>Prestou atendimento de excelência, orientando os clientes em suas compras.</li>
+                <li>Responsável por negociações e finalização de vendas.</li>
+            </ul>
         </div>
 
         <div class="experience-item">
-            <p><span class="job-title">Operador de Caixa</span> - <span class="company">Farmácia do Trabalhador</span></p>
-            <p>Período: 02/06/2017 - 01/06/2018</p>
+            <div class="job-info">
+                <h3>Operador de Caixa | Farmácia do Trabalhador</h3>
+                <span class="period">02/06/2017 - 01/06/2018</span>
+            </div>
+            <ul>
+                <li>Operou o caixa, processando pagamentos e realizando o fechamento diário.</li>
+                <li>Auxiliou no atendimento inicial aos clientes e na organização da loja.</li>
+            </ul>
         </div>
+    </div>
 
+    <div class="section">
+        <h2>ESCOLARIDADE</h2>
+        <p><strong>Ensino Médio Completo</strong> - Belém - PA</p>
+    </div>
+
+    <div class="section">
+        <h2>HABILIDADES</h2>
+        <ul class="skills-list">
+            <li>Negociação</li>
+            <li>Atendimento ao Cliente</li>
+            <li>Prospecção de Clientes</li>
+            <li>Fechamento de Vendas</li>
+            <li>Pacote Office (Word, Excel)</li>
+            <li>Comunicação Eficaz</li>
+            <li>Trabalho em Equipe</li>
+            <li>Proatividade</li>
+            <li>Informática Básica</li>
+        </ul>
     </div>
 
 </div>
